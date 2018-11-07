@@ -8,12 +8,16 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using System.Media;
+//Caretr and Adam
+//Journey through the hood
+//November 7 2018
 
 namespace journeyThroughTheHood
 {
     public partial class HoodAdventure : Form
 
     {
+        //initializing scene variable 
         int scene = 1;
         Random randgen = new Random();
         SoundPlayer player;
@@ -26,6 +30,7 @@ namespace journeyThroughTheHood
 
         private void HoodAdventure_KeyDown(object sender, KeyEventArgs e)
         {
+            //switch case with Q
             if (e.KeyCode == Keys.Q)
             {
                 if (scene == 1)
@@ -169,6 +174,7 @@ namespace journeyThroughTheHood
 
 
             }
+            //switch case with W
             else if (e.KeyCode == Keys.W)
             {
                 if (scene == 3)
@@ -298,6 +304,7 @@ namespace journeyThroughTheHood
                 }
 
             }
+            //switch case with E
             else if (e.KeyCode == Keys.E)
             {
                 if (scene == 12)
@@ -318,6 +325,7 @@ namespace journeyThroughTheHood
 
             switch (scene)
             {
+                //cases
                 case 1:
                     outputLabel.Text = "You come out of work at 9pm and it's pouring rain. Do you?";
                     qLabel.Text = "Take the Bus";
